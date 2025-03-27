@@ -13,14 +13,13 @@
 
 
 const input = document.getElementById("inputField")
-const form = document.getElementById("myForm")
 const button = document.getElementById("button")
 
 button.addEventListener("click", function(event){
   if (!/^[a-zA-Z0-9]+$/.test(input.value)) {
     input.setCustomValidity("Your input is not alphanumeric")
   }
-  
+
   else {
     input.setCustomValidity("Submission confirmed")
   }
